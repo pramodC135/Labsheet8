@@ -22,7 +22,7 @@
 					<!-- NAME -->
 					<div class="input-group input-group-sm mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="LbLName">Name: </span>
+							<span class="input-group-text" id="lblName">Name: </span>
 						</div>
 						<input type="text" id="txtName" name="txtName">
 						</div>
@@ -30,7 +30,7 @@
 					<!-- GENDER -->
 					<div class="input-group input-group-sm mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="LbLName">Gender: </span>
+							<span class="input-group-text" id="lblName">Gender: </span>
 						</div>
 						&nbsp;&nbsp;Male
 						<input type="radio" id="rdoGenderMale" name="rdoGender" value="Male">
@@ -41,7 +41,7 @@
 					<!-- YEAR -->
 					<div class="input-group input-group-sm mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="LbLName" >Year: </span>
+							<span class="input-group-text" id="lblName" >Year: </span>
 						</div>
 						<select id="ddYear" name="ddYear">
 							<option value="0">--Select Year-- </option>
@@ -51,6 +51,9 @@
 							<option value="4">4th Year</option>
 						</select>
 					</div>
+					
+					<div id="alertSuccess" class="alert alert-success"></div>
+					<div id="alertError" class="alert alert-danger"></div>
 					
 				</form>
 			</div>
