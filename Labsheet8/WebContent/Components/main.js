@@ -40,3 +40,45 @@ $(document).ready(function(){
 		}
 	};
 } )();
+
+//page load
+$(document).ready(function()
+{
+	$("#alertSuccess").hide();
+	$("#alertError").hide();
+});
+
+//save button
+$(document).on("click", "#btnSave", function(event){
+
+});
+
+//clear status msges--------------
+$("#alertSuccess").text("");
+$("#alertSuccess").hide();
+$("alertError").text("");
+$("#alertError").hide();
+
+//Form validation-------------------
+var status = validateItemForm();
+
+//If not valid
+if (status != true)
+{
+	$("#alertError").text(status);
+	$("alertError").show();
+	return;
+}
+
+// IF valid
+var student = getStudentCard($("#txtName").val().trim(),
+								$('input[name="rdoGender"]:checked').val(),
+								$("#ddlYear").val());
+								
+$("#colStudent").append(student);
+
+$("#alertSuccess").text("saved successfully.");
+$("#alertSuccess").show();
+
+$("#formStudent")[0].rest();
+
