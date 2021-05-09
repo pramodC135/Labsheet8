@@ -78,7 +78,7 @@ function getStudentCard(name, gender, year)
 		break;
 		
 		case "2":
-		yearnumber = "2nd";
+		yearNumber = "2nd";
 		break;
 		
 		case "3":
@@ -98,7 +98,7 @@ function getStudentCard(name, gender, year)
 	student += "<div class=\"card-body\">";
 	student += title + " " + name + " , ";
 	student += "<br>";
-	student += yearNumber  + "year";
+	student += yearNumber + " Year";
 	student += "</div>";
 	student += "<input type=\"button\" value=\"Remove\" class=\"btn btn-danger remove\">";
 	student += "</div>";
