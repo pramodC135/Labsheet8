@@ -25,6 +25,18 @@
 							<span class="input-group-text" id="LbLName">Name: </span>
 						</div>
 						<input type="text" id="txtName" name="txtName">
+						
+					<!-- GENDER -->
+					<div class="input-group input-group-sm mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" >Gender: </span>
+						</div>
+						&ndsp;&nbsp;Male
+						<input type="radio" id="rdoGenderMale" name="rdoGender" value="Male">
+						&nbsp;&nbsp;Female
+						<input type="radio" id="rdoGenderFemale" name="rdoGender" value="Female">
+					</div>
+					
 					</div>
 				
 				</form>
