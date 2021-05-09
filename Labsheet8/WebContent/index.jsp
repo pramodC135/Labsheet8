@@ -25,20 +25,33 @@
 							<span class="input-group-text" id="LbLName">Name: </span>
 						</div>
 						<input type="text" id="txtName" name="txtName">
+						</div>
 						
 					<!-- GENDER -->
 					<div class="input-group input-group-sm mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text" >Gender: </span>
+							<span class="input-group-text" id="LbLName">Gender: </span>
 						</div>
-						&ndsp;&nbsp;Male
+						&nbsp;&nbsp;Male
 						<input type="radio" id="rdoGenderMale" name="rdoGender" value="Male">
 						&nbsp;&nbsp;Female
 						<input type="radio" id="rdoGenderFemale" name="rdoGender" value="Female">
 					</div>
 					
+					<!-- YEAR -->
+					<div class="input-group input-group-sm mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="LbLName" >Year: </span>
+						</div>
+						<select id="ddYear" name="ddYear">
+							<option value="0">--Select Year-- </option>
+							<option value="1">1st Year</option>
+							<option value="2">2nd Year</option>
+							<option value="3">3rd Year</option>
+							<option value="4">4th Year</option>
+						</select>
 					</div>
-				
+					
 				</form>
 			</div>
 			
