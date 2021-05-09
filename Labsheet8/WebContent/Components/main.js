@@ -82,3 +82,33 @@ $("#alertSuccess").show();
 
 $("#formStudent")[0].rest();
 
+//Save ================================
+$(document).on("click", "#btnSave", function(event)
+{
+	//Claer status msges--------------
+	$("#alertSuccess").text("");
+	$("#alertSuccess").hide();
+	$("#alertError").text("");
+	$("#alertError").hide();
+	
+	// Form validation ------------------
+	var status = validateItemForm();
+	
+	//If not valid-------------------
+	if (status != true)
+	{
+		$("#alertError").text(status);
+		$("#alertError").show();
+		return;
+	}
+	
+	// if valid -----------------------
+	//Generate the card and append
+	var student =  getStudentCard($("#txtName").val().trim()
+						$('input[name="rdoGender"]:checked')val()
+						$("#ddlYear").val());
+						
+	$("#colStudents").append(student);
+	
+	$("#alertSuccess").text()
+});
