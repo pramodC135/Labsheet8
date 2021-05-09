@@ -82,6 +82,31 @@ $(document).on("click", "#btnSave", function(event){
 
 });
 
+function validateItemForm()
+{
+	//validations
+	
+	// NAME
+	if ($("#txtName").val().trim() == "")
+	{
+		return "Insert Studnet name.";
+	}
+	
+	//GENDER
+	if ($('input[name="rdoGender"]:checked').length == 0)
+	{
+		return "Select gender.";
+	}
+	
+	//YEAR
+	if ($("#ddlYear").val() == "0")
+	{
+		return "Select year.";
+	}
+	
+	return true;
+}
+
 
 
 
