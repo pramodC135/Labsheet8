@@ -43,7 +43,7 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text" id="lblName" >Year: </span>
 						</div>
-						<select id="ddlYear" name="ddYear">
+						<select id="ddlYear" name="ddlYear">
 							<option value="0">--Select Year-- </option>
 							<option value="1">1st Year</option>
 							<option value="2">2nd Year</option>

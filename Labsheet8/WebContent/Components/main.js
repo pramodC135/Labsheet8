@@ -1,6 +1,3 @@
-/**
- * 
- */
 
 //page load
 $(document).ready(function()
@@ -15,7 +12,7 @@ $(document).on("click", "#btnSave", function(event){
 	//clear status msges--------------
 	$("#alertSuccess").text("");
 	$("#alertSuccess").hide();
-	$("alertError").text("");
+	$("#alertError").text("");
 	$("#alertError").hide();
 
 	//Form validation-------------------
@@ -25,21 +22,21 @@ $(document).on("click", "#btnSave", function(event){
 	if (status != true)
 	{
 		$("#alertError").text(status);
-		$("alertError").show();
+		$("#alertError").show();
 		return;
 	}
 
 	// IF valid
 	var student = getStudentCard($("#txtName").val().trim(),
-								$('input[name="rdoGender"]:checked').val(),
-								$("#ddlYear").val());
+						$('input[name="rdoGender"]:checked').val(),
+						$("#ddlYear").val());
 								
-	$("#colStudent").append(student);
+	$("#colStudents").append(student);
 
 	$("#alertSuccess").text("Saved successfully.");
 	$("#alertSuccess").show();
 
-	$("#formStudent")[0].rest();
+	$("#formStudent")[0].reset();
 
 });
 
@@ -50,7 +47,7 @@ function validateItemForm()
 	// NAME
 	if ($("#txtName").val().trim() == "")
 	{
-		return "Insert Studnet name.";
+		return "Insert Student name.";
 	}
 	
 	//GENDER
@@ -103,8 +100,17 @@ function getStudentCard(name, gender, year)
 	student += "<br>";
 	student += yearNumber  + "year";
 	student += "</div>";
-	student += "input type=\"button\" value=\"Remove\" class=\"btn btn-danger remove\">";
+	student += "<input type=\"button\" value=\"Remove\" class=\"btn btn-danger remove\">";
 	student += "</div>";
 	
-	return;
+	return student;
 }
+
+//Remove buttom handler
+$(document).on("click", ".remove", function(event){
+
+	$(this).closest(".student").remove();
+	
+	$("#alertSuccess").text("Removed Successfully.");
+	$("#alertSuccess").show();
+});
