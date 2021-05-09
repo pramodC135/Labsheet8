@@ -33,7 +33,7 @@ $(document).on("click", "#btnSave", function(event){
 								
 	$("#colStudents").append(student);
 
-	$("#alertSuccess").text("Saved successfully.");
+	$("#alertSuccess").text("Saved Successfully.");
 	$("#alertSuccess").show();
 
 	$("#formStudent")[0].reset();
@@ -47,19 +47,19 @@ function validateItemForm()
 	// NAME
 	if ($("#txtName").val().trim() == "")
 	{
-		return "Insert Student name.";
+		return "Insert Student Name.";
 	}
 	
 	//GENDER
 	if ($('input[name="rdoGender"]:checked').length == 0)
 	{
-		return "Select gender.";
+		return "Select Gender.";
 	}
 	
 	//YEAR
 	if ($("#ddlYear").val() == "0")
 	{
-		return "Select year.";
+		return "Select Year.";
 	}
 	
 	return true;
