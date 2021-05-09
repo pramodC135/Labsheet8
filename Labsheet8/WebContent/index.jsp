@@ -12,6 +12,17 @@
 </head>
 <body>
 
+	<div class="container">
+		<div class="row">
+			<div class= "col-8">
+				<h1 class="m-3"> Student Details</h1>
+				
+				<form id="formStudent"> 
+				</form>
+			</div>
+			
+		</div>
+	</div>
 
 </body>
 </html>
