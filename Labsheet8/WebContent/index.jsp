@@ -55,6 +55,7 @@
 					<div id="alertSuccess" class="alert alert-success"></div>
 					<div id="alertError" class="alert alert-danger"></div>
 					
+					<input type="button" id="btnSave" value="Save" class="btn btn-primary">
 				</form>
 			</div>
 			
