@@ -1,4 +1,3 @@
-
 //page load
 $(document).ready(function()
 {
@@ -7,8 +6,8 @@ $(document).ready(function()
 });
 
 //Save button
-$(document).on("click", "#btnSave", function(event){
-
+$(document).on("click", "#btnSave", function(event)
+{
 	//clear status msges--------------
 	$("#alertSuccess").text("");
 	$("#alertSuccess").hide();
